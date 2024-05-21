@@ -1,0 +1,290 @@
+:root {
+    --color-bg-block: #fff;
+    --color-text: #000;
+    --color-bg: #34CEF0;
+    --bor-rad: 25px;
+    --bor-rad-img: 50px; 
+}
+.darkmode {
+    --color-bg-block: #000;
+    --color-text: #fff;
+    --color-bg: #2C5BD3;
+}
+
+.titleText {
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+}
+.buttonText {
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+}
+
+header {
+    height: 70px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+}
+header > nav {
+    width: 1260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+.nuvSection {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg-block);
+    border-radius: var(--bor-rad);
+}
+
+main {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+}
+/* main */
+.firstBlock {
+    margin: 45px 0;
+    width: 1260px;
+}
+.firstBlock > form {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    gap: 2px;
+}
+.firstBlock > form > section {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstInput {
+    width: 240px;
+    height: 50px;
+    color: var(--color-text);
+    background-color: var(--color-bg-block);
+    border: none;
+    border-radius: 10px;
+}
+.btnSearch {
+    width: 240px;
+    height: 50px;
+    background-color: var(--color-bg-block);
+    color: var(--color-text);
+    border: none;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.popularFlights {
+    width: 1260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popularFlights > h2 {
+    color: var(--color-text);
+}
+.arrivingFlightsCardBox {
+    width: 1260px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrivingCard {
+    width: 400px;
+    height: fit-content;
+    border-radius: var(--bor-rad);
+    background-color: var(--color-bg-block);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.arrivingCountry {
+    margin: 5px;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.arrivingCountry > img {
+    border-radius: var(--bor-rad-img);
+}
+.arrivingCity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.moreDetailed {
+    padding: 5px;
+    color: var(--color-bg);
+    border: none;
+    background-color: inherit;
+}
+.infoRoute {
+    display: none;
+    width: 400px;
+    background-color: var(--color-bg-block);
+    border-radius: var(--bor-rad);
+    text-align: center;
+}
+.infoRoute * {
+    margin: 10px 0;
+}
+.btnClose {
+    width: 180px;
+    height: 60px;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    border-radius: var(--bor-rad-img);
+    border: none;
+}
+
+/* form reg/auto */
+.articleTitle {
+    width: 1260px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+.container {
+    width: 1260px;
+    height: 500px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.block-item {
+    background-color: var(--color-bg-block);
+    width: 1260px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-text);
+}
+.block-item article {
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.signinbtn {
+    width: 200px;
+    height: 45px;
+    border: none;
+    background-color: var(--color-bg);
+    border-radius: var(--bor-rad);
+    padding: 10px 20px;
+}
+.signupbtn {
+    width: 200px;
+    height: 45px;
+    border: none;
+    background-color: var(--color-bg);
+    border-radius: var(--bor-rad);
+    padding: 10px 20px;
+}
+.form-box {
+    background-color: var(--color-bg);
+    height: 500px;
+    width: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+.form {
+    width: 630px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.form-signin {
+    left: 0;
+    transition-delay: .25s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.form-signup {
+    left: 630px;
+    transition-delay: 0s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.form-title {
+    font-weight: 700;
+    color: var(--color-text);
+}
+.form-input {
+    width: 300px;
+    height: 50px;
+    border: solid 5px var(--color-bg-block);
+    border-radius: var(--bor-rad);
+}
+.form-btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: var(--bor-rad);
+    background-color: var(--color-bg-block);
+    color: var(--color-text);
+}
+.form-forgot {
+    color: var(--color-text);
+    text-decoration: none;
+}
+.form-box.active {
+    transform: translateX(100%);
+}
+.form-box.active .form-signin {
+    transform: translateX(-100%);
+    transition-delay: 0s;
+}
+.form-box.active .form-signup {
+    left: 0;
+    transition-delay: .25s;
+}
