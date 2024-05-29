@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    color: black;
+}
+
+main {
+    width: 1260px;
+}
+
+.flightContainer {
+    width: 1260px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.imgFlight {
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.flightBox {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.flightPath,
+.flightDate {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.flightPath > section,
+.flightDate > section {
+    text-align: center;
+    width: 100px;
+    height: 40px;
+}
+
+.flightPath > section:first-of-type,
+.flightPath > section:last-of-type,
+.flightDate > section:first-of-type,
+.flightDate > section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnBooking {
+    width: 120px;
+    height: 40px;
+}

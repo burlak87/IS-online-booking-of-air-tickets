@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>AirBooking</title>
+    <link rel="stylesheet" href="./assets/style/indexStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <section class="nuvSection">
+                <p>AirBooking</p>
+            </section>
+            <section class="nuvSection">
+                <button id="colorMode" class="colorMode">Сменить тему</button>
+                <a href="#container" id="regAuth" class="regAuth">Авторизация</a>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <article class="firstBlock">
+            <form action="#">
+                <section>
+                    <p>Город</p>
+                    <input type="text" placeholder="Откуда" class="firstInput">
+                </section>
+                <section>
+                    <p>Город</p>
+                    <input type="text" placeholder="Куда"  class="firstInput">
+                </section>
+                <section>
+                    <p>Туда</p>
+                    <input type="date" class="firstInput">
+                </section>
+                <section>
+                    <p>Обратно</p>
+                    <input type="date" class="firstInput">
+                </section>
+                <button class="btnSearch">поиск</button>
+            </form>
+        </article>
+        <article class="popularFlights">
+            <h2 class="titleText">Популярные перелеты</h2>
+            <section class="arrivingFlightsCardBox">
+                <!-- 1 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/UAE.png" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Дубай</p>
+                                <p>ОАЭ</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Дубай</p>
+                            <p>Домодедово(Москва) - Дубай</p>
+                            <p>Сочи - Дубай</p>
+                            <p>Уфа - Дубай</p>
+                            <p>Толмачево(Новосибирск) - Дубай</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 2 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/USA.jpg" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Нью-Йорк</p>
+                                <p>США</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Нью-Йорк</p>
+                            <p>Домодедово(Москва) - Нью-Йорк</p>
+                            <p>Сочи - Нью-Йорк</p>
+                            <p>Уфа - Нью-Йорк</p>
+                            <p>Толмачево(Новосибирск) - Нью-Йорк</p>
+                                <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 3 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/TURKEY.png" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Стамбул</p>
+                                <p>Турция</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Стамбул</p>
+                            <p>Домодедово(Москва) - Стамбул</p>
+                            <p>Сочи - Стамбул</p>
+                            <p>Уфа - Стамбул</p>
+                            <p>Толмачево(Новосибирск) - Стамбул</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 4 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/USA.jpg" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Лос-Анджелес</p>
+                                <p>США</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Лос-Анджелес</p>
+                            <p>Домодедово(Москва) - Лос-Анджелес</p>
+                            <p>Сочи - Лос-Анджелес</p>
+                            <p>Уфа - Лос-Анджелес</p>
+                            <p>Толмачево(Новосибирск) - Лос-Анджелес</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 5 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/USA.jpg" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Сиэтл</p>
+                                <p>США</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Сиэтл</p>
+                            <p>Домодедово(Москва) - Сиэтл</p>
+                            <p>Сочи - Сиэтл</p>
+                            <p>Уфа - Сиэтл</p>
+                            <p>Толмачево(Новосибирск) - Сиэтл</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 6 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/TURKEY.png" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Анталья</p>
+                                <p>Турция</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Анталья</p>
+                            <p>Домодедово(Москва) - Анталья</p>
+                            <p>Сочи - Анталья</p>
+                            <p>Уфа - Анталья</p>
+                            <p>Толмачево(Новосибирск) - Анталья</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 7 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/Thailand.jpg" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Бангкок</p>
+                                <p>Тайланд</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Бангкок</p>
+                            <p>Домодедово(Москва) - Бангкок</p>
+                            <p>Сочи - Бангкок</p>
+                            <p>Уфа - Бангкок</p>
+                            <p>Толмачево(Новосибирск) - Бангкок</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 8 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/Thailand.jpg" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Пхукет</p>
+                                <p>Тайланд</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Пхукет</p>
+                            <p>Домодедово(Москва) - Пхукет</p>
+                            <p>Сочи - Пхукет</p>
+                            <p>Уфа - Пхукет</p>
+                            <p>Толмачево(Новосибирск) - Пхукет</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 9 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/France.png" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Париж</p>
+                                <p>Франция</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Париж</p>
+                            <p>Домодедово(Москва) - Париж</p>
+                            <p>Сочи - Париж</p>
+                            <p>Уфа - Париж</p>
+                            <p>Толмачево(Новосибирск) - Париж</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 10 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/Niderlands.jpg" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Амстердам</p>
+                                <p>Нидерланды</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Амстердам</p>
+                            <p>Домодедово(Москва) - Амстердам</p>
+                            <p>Сочи - Амстердам</p>
+                            <p>Уфа - Амстердам</p>
+                            <p>Толмачево(Новосибирск) - Амстердам</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 11 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/Germany.jpg" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Берлин</p>
+                                <p>Германия</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Берлин</p>
+                            <p>Домодедово(Москва) - Берлин</p>
+                            <p>Сочи - Берлин</p>
+                            <p>Уфа - Берлин</p>
+                            <p>Толмачево(Новосибирск) - Берлин</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+                <!-- 12 -->
+                <article class="card">
+                    <section class="arrivingCard">
+                        <article class="arrivingCountry">
+                            <img src="./assets/images/Egypt.png" alt="" width="60" height="60">
+                            <section class="arrivingCity">
+                                <p>Каир</p>
+                                <p>Египет</p>
+                            </section>
+                        </article>
+                        <button class="moreDetailed buttonText">Подробнее</button>
+                        <article class="infoRoute">
+                            <p>Шереметьево(Москва) - Каир</p>
+                            <p>Домодедово(Москва) - Каир</p>
+                            <p>Сочи - Каир</p>
+                            <p>Уфа - Каир</p>
+                            <p>Толмачево(Новосибирск) - Каир</p>
+                            <button class="btnClose">Закрыть</button>
+                        </article>
+                    </section>
+                </article>
+            </section>
+        </article>
+        <article class="articleTitle">
+            <h3 id="titleForm">Авторизация</h3>
+        </article>
+        <article id="container" class="container">
+            <section class="block-item">
+                <article>
+                    <h2>У вас уже есть аккаунт?</h2>
+                    <button class="signinbtn">Войти</button>
+                </article> 
+                <article>
+                    <h2>У вас нет аккаунта?</h2>
+                    <button class="signupbtn">Зарегистрироваться</button>
+                </article>
+            </section>
+            <section class="form-box">
+                <form action="#" class="form form-signin">
+                    <h3 class="form-title">Авторизация</h3>
+                    <p><input type="text" class="form-input" placeholder="Логин"></p>
+                    <p><input type="password" class="form-input" placeholder="Пароль"></p>
+                    <p><button class="form-btn">Войти</button></p>
+                    <p><a href="#" class="form-forgot">Восстановить пароль</a></p>
+                </form>                
+                <form action="#" class="form form-signup">
+                    <h3 class="form-title">Регистрация</h3>
+                    <p><input type="text" class="form-input" id="login" placeholder="Логин"></p>
+                    <p><input type="email" class="form-input" id="email" placeholder="Email"></p>
+                    <p><input type="password" class="form-input" id="passwordOne" placeholder="Пароль"></p>
+                    <p><input type="password" class="form-input" id="passwordTwo" placeholder="Подтвердите пароль"></p>
+                    <p><button class="form-btn form-btn-sign-up">Зарегистрироваться</button></p>
+                </form>
+            </section>
+        </article> 
+    </main>
+    <footer>
+        <article class="footBox">
+            <section class="aboutInfo">
+                <article class="firstFootArt">
+                    <h6>Руководящий pet-проектом</h6>
+                    <p>Ильин Владислав Русланович</p>
+                    <section class="linkBox">
+                        <article class="linkFoot">
+                            <img src="./assets/images/github-logo.png" alt="0" width="60" height="60">
+                            <p>https://github.com/ghostITwe</p>
+                        </article>           
+                        <article class="linkFoot">
+                            <img src="./assets/images/telegram-logo.png" alt="0" width="60" height="60">
+                            <p>@Vladosixz</p>
+                        </article>
+                    </section>
+                </article>
+                <article class="secondFootArt">
+                    <h6>Создатель pet-проекта</h6>
+                    <p>Бурлаков Федор Павлович</p>
+                    <section class="linkBox">
+                        <article class="linkFoot">
+                            <img src="./assets/images/github-logo.png" alt="0" width="60" height="60">
+                            <p>https://github.com/burlak87</p>
+                        </article>           
+                        <article class="linkFoot">
+                            <img src="./assets/images/telegram-logo.png" alt="0" width="60" height="60">
+                            <p>@lustpr1de</p>
+                        </article>
+                    </section>
+                </article>
+            </section>
+            <p>© 2007–2024, AirBooking — дешевая бронь авиабилетов</p>
+        </article>
+    </footer>
+    <script src="./assets/script/indexScript.js"></script>
+</body>
+</html>
