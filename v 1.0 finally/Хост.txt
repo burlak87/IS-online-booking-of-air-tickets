@@ -1,0 +1,9 @@
+http://burlak87.beget.tech/
+
+Beget:
+Login: burlak87
+Password: vgdZISlW8omQ
+
+PHPMyAdmin:
+Login: burlak87_practic
+Password: BurlakFedor87
